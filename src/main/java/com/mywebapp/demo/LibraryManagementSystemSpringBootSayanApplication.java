@@ -7,12 +7,23 @@ import java.util.Date;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mywebapp.demo.model.BorrowBook;
 
+@Controller
 @SpringBootApplication
 public class LibraryManagementSystemSpringBootSayanApplication {
+	
+	@GetMapping(path="/")
+	public ModelAndView homeAPIGuide() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("home.jsp");
+		return mv;
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(LibraryManagementSystemSpringBootSayanApplication.class, args);
