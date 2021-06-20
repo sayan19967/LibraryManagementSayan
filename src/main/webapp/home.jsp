@@ -6,34 +6,48 @@
 <meta charset="ISO-8859-1">
 <title>Welcome to Library Management API Home built by Sayan</title>
 <style>
-#customers {
+#library {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-#customers td, #customers th {
+#library td, #library th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+#library tr:nth-child(even){background-color: #f2f2f2;}
 
-#customers tr:hover {background-color: #ddd;}
+#library tr:hover {background-color: #ddd;}
 
-#customers th {
+#library th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
   background-color: #04AA6D;
   color: white;
 }
+
+#library caption {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  font-size: 25px;
+} 
 </style>
 </head>
 <body>
 	
-		<table name="APIFocumentationGuideTableOfLibraryManagementSystemSayan" id="customers">
-			<tr>
+		<table name="APIFocumentationGuideTableOfLibraryManagementSystemSayan" id="library">
+			<caption>
+				Welcome to Library Management API Home built using Spring Boot v2.5.1<br/>Author - Sayan Halder
+			</caption>
+			<tbody>
+				<tr>
 				<th><label>API URL</label></th>
 				<th><label>Http Method</label></th>
 				<th><label>Description</label></th>
@@ -145,6 +159,7 @@
 				<td><label>GET</label></td>
 				<td><label>Get the bill for that particular billing ID</label></td>
 			</tr>
+			</tbody>
 		</table>
 	
 	
